@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Namma_Sydney</title>
+
+    <style>
+
+        html{
+            max-width: 100vw;
+            
+        }
+        
+
+        img { max-width: 100% }
+
+        body{
+
+            border: none;
+            margin: 0%;
+            padding: 0%;
+            
+
+            height: 100%;
+            max-width: 100%;
+        }
+        .container{
+
+            display: grid;
+            border: none;
+            background-color: bisque;
+            max-width:100%;
+            height: 100%;
+            grid-template-columns: repeat(5, 0.6fr);
+            grid-template-rows: .2fr 2fr 2fr 2fr;
+            margin: 0%;
+            padding: 0%;
+            resize: vertical;
+            
+            
+
+        }
+
+        
+        .firstblock {
+            height: 100%;
+            max-width: 100%; 
+            grid-column-start: 1;
+            grid-column-end: 2;  
+            margin: 0%;
+            padding: 0%;
+            resize: vertical;
+                 
+        }
+
+        .leftheader {
+            border: solid;
+            height: 100%;
+            max-width: 100%; 
+            grid-column-start: 2;
+            grid-column-end: 3;     
+            margin: 0%;
+            padding: 0%;   
+            resize: vertical;
+            box-sizing: border-box;  
+        }
+
+        .header{
+            display: grid; 
+            border: solid;                  
+            height: 100%;
+            max-width: 100%;
+            grid-template-columns: repeat(4, 1fr);        
+            grid-template-rows: repeat(2, 1fr); 
+            column-gap: 2px;
+            margin: 0%;
+            padding: 0%;
+            background-color: cadetblue;
+            resize: vertical;
+                    
+        }
+    
+    
+        .LineoneI{
+            
+            border: none;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-repeat: no-repeat;
+            background-size: contain;
+            justify-items: center; 
+            max-width: 100%; 
+            height: 100%;
+            object-fit: auto;
+            margin: 0%;
+            padding: 0%;              
+                    }   
+        .LineoneA{           
+            border: none;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            background-repeat: no-repeat;
+            background-size: contain;
+            justify-items: center; 
+            max-width: 100%; 
+            height: 100%;
+            object-fit: auto;
+            margin: 0%;
+            padding: 0%;              
+                    }
+    
+                    
+                        
+                        
+    
+         
+    
+        .Linetwokflag {
+            border: none;
+            
+            background-repeat: no-repeat;
+            background-size: contain;
+            justify-items: center; 
+            max-width: 100%; 
+            height: 100%;
+            object-fit: auto;
+            margin: 0%;
+            padding: 0%;
+            resize: vertical;
+
+            
+        }
+    
+        .Linetwoktext {
+           
+    
+            
+            grid-column-start: 2;
+            grid-column-end: 3;
+            align-self: center;
+            margin: auto;
+            padding: 0%;
+            resize: vertical;
+            
+            
+               
+        }
+    
+        
+        .Linetwontext {
+           
+            border: none;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            align-self: center;
+            margin: auto;
+            padding: 0%;
+            resize: vertical;
+            
+    
+        }
+    
+        .Linetwonflag {
+            border: none;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            background-repeat: no-repeat;
+            background-size: contain;
+            justify-items: center; 
+            width: 100%;
+            height: 100%;
+            object-fit: auto;
+            margin: 0%;
+            padding: 0%;
+                    }
+
+        .rightheader {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border: solid;
+            margin: 0%;
+            padding: 0%;
+            resize: vertical;
+            box-sizing: border-box ;
+            
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.1);
+            border: solid;
+            grid-row-start: 2;
+            grid-row-end: 8;
+            grid-column-start: 1;
+            grid-column-end: 2;  
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0%;
+            padding: 0%;
+            width: 100%;
+            resize: vertical;
+            
+        }
+
+        .pagebody{
+            border: none;
+            grid-row-start: 2;
+            grid-row-end: 6;
+            grid-column-start: 2;
+            grid-column-end: 6;                      
+            background-repeat: no-repeat;
+            background-size: contain; 
+            margin: 0%;
+            padding: 0%; 
+            max-width: 100%;         
+            resize: vertical;         
+        }
+
+        
+
+
+        
+
+        
+        #navbody {
+
+            max-width: 100%;
+            height: 100%;
+            resize: vertical;
+            
+        }
+
+
+        #idbody {
+
+            width: 100%;
+            height: 100%;
+            resize: vertical;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <img class="firstblock" src="Images/Mysore_Palace.jpg" style="max-width:100%;"/>
+            
+        <img class="leftheader" src="Images/Qantas.jpg" style="max-width:100%;"/>
+        
+         
+        <div class="header">
+            <img class="LineoneI" src="Images/Flag-India.webp" style="max-width:100%;"/>
+           <img class="LineoneA" src="Images/Flag-Australia.webp" style="max-width:100%;"/>           
+           <img class="Linetwokflag" src="Images/NSW.png"/> 
+           <div class="Linetwoktext"><h1>ನಮ್ಮ</h1></div>           
+           <div class="Linetwontext"><h1>ಸಿಡ್ನಿ</h1></div>
+           <img class="Linetwonflag" src="Images/karnataka_flag.jpg" style="max-width:100%;"/>
+        </div>
+        <img class="rightheader" src="Images/Sydney_Pano.jpeg" style="max-width:100%;"/>
+        <div class="navbar" style="max-width: 100%;">
+             <iframe name="navbody" id="navbody" frameborder="0" src="Nav_Links.html"></iframe></div>
+        <div class="pagebody" style="max-width: 100%;">
+            
+            <iframe name="namebody" id="idbody" src="home.html" frameborder="0"></iframe>
+
+            
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>

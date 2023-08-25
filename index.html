@@ -2,272 +2,229 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Namma_Sydney</title>
-
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
     <style>
 
+        @media screen and (max-width: 601px) {
+            .header {
+              font-size: 0.2em;
+            }
+          }     
+
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
         html{
-            max-width: 100vw;
-            
-        }
-        
-
-        img { max-width: 100% }
-
-        body{
-
-            border: none;
-            margin: 0%;
-            padding: 0%;
-            
-
+            width: 100%;
             height: 100%;
-            max-width: 100%;
-        }
-        .container{
+            
+            }
 
+        body {
+
+            width: 100%;
+            height: 100%;
+            
+            
+            
+
+        }
+
+        .container {
             display: grid;
-            border: none;
+            height: 100%;
+            width: 100%;            
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: .2fr 1fr 1fr 1fr;
             background-color: bisque;
-            max-width:100%;
-            height: 100%;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            margin: 0%;
-            padding: (3vh, 1rem);
-            resize: vertical;
-            
-            
-
         }
 
         
-        .firstblock {
+
+        <!-- .leftpanel{
+            display: grid;
+            grid-area: a;    
             height: 100%;
-            max-width: 100%; 
+            width: 100%;             
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.25fr 1.75fr;              
+            background-color: rgba(0, 0, 0, 0.8);
+            grid-row-start: 1;
+            grid-row-end: 5;
             grid-column-start: 1;
-            grid-column-end: 2;  
-            margin: 0%;
-            padding: 0%;
-            resize: vertical;
-                 
-        }
-
-        .leftheader {
-            border: solid;
-            height: 100%;
-            max-width: 100%; 
-            grid-column-start: 2;
-            grid-column-end: 3;     
-            margin: 0%;
-            padding: 0%;     
-        }
-
-        .header{
-            display: grid; 
-            border: solid;                  
-            height: 100%;
-            max-width: 100%;
-            grid-template-columns: repeat(4, 1fr);        
-            grid-template-rows: repeat(2, 1fr); 
-            column-gap: 2px;
-            margin: 0%;
-            padding: 0%;
-            background-color: cadetblue;
-            resize: vertical;
-                    
-        }
-    
-    
-        .LineoneI{
+            grid-column-end: 2;
             
-            border: none;
+        } -->
+
+        .outerleftheader{
+            
+            height: 100%;
+            width: 100%;   
+            object-fit:fill;  
+            grid-row-start: 1;
+            grid-row-end: 2;
             grid-column-start: 1;
-            grid-column-end: 3;
-            background-repeat: no-repeat;
-            background-size: contain;
-            justify-items: center; 
-            max-width: 100%; 
-            height: 100%;
-            object-fit: auto;
-            margin: 0%;
-            padding: 0%;              
-                    }   
-        .LineoneA{           
-            border: none;
-            grid-column-start: 3;
-            grid-column-end: 5;
-            background-repeat: no-repeat;
-            background-size: contain;
-            justify-items: center; 
-            max-width: 100%; 
-            height: 100%;
-            object-fit: auto;
-            margin: 0%;
-            padding: 0%;              
-                    }
-    
-                    
-                        
-                        
-    
-         
-    
-        .Linetwokflag {
-            border: none;
+            grid-column-end: 2;   
             
-            background-repeat: no-repeat;
-            background-size: contain;
-            justify-items: center; 
-            max-width: 100%; 
-            height: 100%;
-            object-fit: auto;
-            margin: 0%;
-            padding: 0%;
-            resize: vertical;
-
-            
-        }
-    
-        .Linetwoktext {
-           
-    
-            
-            grid-column-start: 2;
-            grid-column-end: 3;
-            align-self: center;
-            margin: auto;
-            padding: 0%;
-            resize: vertical;
-            
-            
-               
-        }
-    
-        
-        .Linetwontext {
-           
-            border: none;
-            grid-column-start: 3;
-            grid-column-end: 4;
-            align-self: center;
-            margin: auto;
-            padding: 0%;
-            resize: vertical;
-            
-    
-        }
-    
-        .Linetwonflag {
-            border: none;
-            grid-column-start: 4;
-            grid-column-end: 5;
-            background-repeat: no-repeat;
-            background-size: contain;
-            justify-items: center; 
-            width: 100%;
-            height: 100%;
-            object-fit: auto;
-            margin: 0%;
-            padding: 0%;
-                    }
-
-        .rightheader {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            border: solid;
-            margin: 0%;
-            padding: 0%;
-            resize: vertical;
         }
 
-        .navbar {
+        .navbar{
             display: flex;
             flex-direction: column;
-            background-color: rgba(0, 0, 0, 0.1);
-            border: solid;
+            align-items: center;
+            justify-content: flex-start;
+            justify-content: space-evenly;
             grid-row-start: 2;
-            grid-row-end: 8;
+            grid-row-end: 5;
             grid-column-start: 1;
-            grid-column-end: 2;  
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin: 0%;
-            padding: 0%;
-            width: 100%;
-            resize: vertical;
+            grid-column-end: 2;
+            
             
         }
 
-        .pagebody{
-            border: none;
-            grid-row-start: 2;
-            grid-row-end: 6;
-            grid-column-start: 2;
-            grid-column-end: 6;                      
-            background-repeat: no-repeat;
-            background-size: contain; 
-            margin: 0%;
-            padding: 0%; 
-            max-width: 100%;         
-            resize: vertical;         
+        a {
+            color: white;
+            text-decoration: double;
+            margin-right: auto;
+            margin-left: 05%;
+            
+            
         }
 
-        
-
-
-        
-
-        
-        #navbody {
-
-            max-width: 100%;
+        .innerleftheader {
+            
             height: 100%;
-            resize: vertical;
-            
+            width: 100%;   
+            object-fit:fill;    
         }
 
+
+        .header{  
+            display: grid;
+            border: none;  
+            background-color: burlywood;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 100%;
+            width: 100%;   
+                
+        }        
+
+        .kflag{
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }
+        .nflag{
+            display: flex;
+            flex-wrap: wrap; 
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }
+        .ktext{
+            display: flex;
+            flex-wrap: wrap;
+            border: none;
+            align-items: center;
+            justify-content: center;     
+            margin-left: 50%;
+            height: 100%;
+            width: 100%; 
+            font-size: larger;
+                     
+        }
+        
+        
+        
+        .innerrightheader {
+            height: 100%;
+            width: 100%;   
+            object-fit:fill;         
+        }
+
+        .outerrightheader {
+            
+            height: 100%;
+            width: 100%;   
+            object-fit:fill;       
+        }
+
+        
+        
+
+       
+
+        .navbody{
+            display: flex;
+            flex-wrap: wrap;   
+            border: none;
+            grid-column-start: 2;
+            grid-column-end: 6;   
+            grid-row-start: 2;
+            grid-row-end: 6; 
+
+        }
+
+       
 
         #idbody {
-
-            width: 100%;
-            height: 100%;
-            resize: vertical;
             
+            height: 100%;
+            width: 100%;       
         }
-
+    
     </style>
 </head>
 <body>
 
+
+    
+        
     <div class="container">
+
+        <div class="leftpanel">
+            <img class="outerleftheader" src="Images/Flag-India.webp" style="max-width:100%;"/>
+
+            <div class="navbar">            
+                <a href="home.html" target="namebody">Home</a>
+                <a href="NS_Community_Website_Links.html" target="namebody">Community Sites</a>
+                <a href="Table.html" target="namebody">Table</a>
+                <a href="Free_Services.html" target="namebody">Free Community Services</a>
+                <a href="Talent_Pool.html" target="namebody">Talent Pool</a>
+                <a href="NS_Business_Directory.html" target="namebody">Business Directory</a>
+                <a href="NS_Upcoming_Events.html" target="namebody">Upcoming Events</a> 
+                <a href="DownTheMemoryLane.html" target="namebody">Down The Memory Lane</a>
+                <a href="https://forms.gle/b6gwc1HJS8A4Rb9g9" target="namebody">Request to Create Entry</a>
+                <a href="ContactUS.html" target="namebody">Contact Us</a>   
+            </div>
+
+
+        </div>
         
-        <img class="firstblock" src="Images/Mysore_Palace.jpg" style="max-width:100%;"/>
-            
-        <img class="leftheader" src="Images/Qantas.jpg" style="max-width:100%;"/>
-        
-         
+       
+         <img class="innerleftheader" src="Images/Mysore_Palace.jpg" style="max-width:100%;"/>
+
         <div class="header">
-            <img class="LineoneI" src="Images/Flag-India.webp" style="max-width:100%;"/>
-           <img class="LineoneA" src="Images/Flag-Australia.webp" style="max-width:100%;"/>           
-           <img class="Linetwokflag" src="Images/NSW.png"/> 
-           <div class="Linetwoktext"><h1>ನಮ್ಮ</h1></div>           
-           <div class="Linetwontext"><h1>ಸಿಡ್ನಿ</h1></div>
-           <img class="Linetwonflag" src="Images/karnataka_flag.jpg" style="max-width:100%;"/>
+            <img class="kflag" src="Images/karnataka_flag.jpg" style="max-width:100%;"/>
+            <img class="nflag" src="Images/NSW.png" style="max-width:100%;"/>  
+            <div class="ktext"><h2>ನಮ್ಮ ಸಿಡ್ನಿ</h2></div>
         </div>
-        <img class="rightheader" src="Images/Sydney_Pano.jpeg" style="max-width:100%;"/>
-        <div class="navbar" style="max-width: 100%;">
-             <iframe name="navbody" id="navbody" frameborder="0" src="Nav_Links.html"></iframe></div>
-        <div class="pagebody" style="max-width: 100%;">
-            
-            <iframe name="namebody" id="idbody" src="home.html" frameborder="0"></iframe>
-
-            
-        </div>
+             
         
-
+        <img class="innerrightheader" src="Images/SydneyOpera_House.JPG" style="max-width:100%;"/>
+        <img class="outerrightheader" src="Images/Flag-Australia.webp" style="max-width:100%;"/>
+        
+        <div class="navbody">
+            <iframe src="" name="namebody" id="idbody" frameborder="0"></iframe>
+        </div> 
+         
+        
     </div>
     
 </body>
