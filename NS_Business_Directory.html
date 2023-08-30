@@ -152,9 +152,21 @@
             resize: vertical;
             
             }
-
-
             .item10{
+                display: flex;
+                
+                background-image: url('Images/Real_Estate.jpg');
+                background-size: 50%;
+                background-repeat: no-repeat; 
+                background-position-x: 50%;
+                background-position-y: 30%;
+                justify-content: center;
+                align-items: flex-end;
+                resize: vertical;
+                
+                }
+
+            .item11{
             display: flex;
             
             background-image: url('Images/Real_Estate.jpg');
@@ -169,7 +181,7 @@
             }
 
 
-            .item11{
+            .item12{
                 display: flex;
                 
                 background-image: url('Images/worship.jpg');
@@ -183,7 +195,7 @@
                 
                 }
 
-                .item12{
+                .item13{
                     display: flex;
                     
                     background-image: url('Images/Building and Interiors.jpg');
@@ -198,7 +210,7 @@
                     }
 
 
-                    .item13{
+                    .item14{
                         display: flex;
                         
                         background-image: url('Images/Automobile.jpg');
@@ -214,7 +226,7 @@
 
                     
 
-                        .item14{
+                        .item15{
                             display: flex;
                             
                             background-image: url('Images/Gardening.jpg');
@@ -231,7 +243,7 @@
 
                             
 
-                            .item15{
+                            .item16{
                                 display: flex;
                                 
                                 background-image: url('Images/Handyman.jpg');
@@ -245,7 +257,7 @@
                                 
                                 }
 
-                                .item16{
+                                .item17{
                                     display: flex;                        
                                     background-image: url('Images/miscellaneous.jpg');
                                     background-size: 40%;
@@ -262,18 +274,32 @@
            
 
 
-        .containerR{
+        <!-- .containerR{
+
+            
             display: grid;
             border: none;
             width: 100%;
             height: 100%;
             margin-left: 0%;
             
+
             grid-template-columns: repeat(6,1fr);         
             grid-template-rows: repeat(6,1fr); 
             column-gap: 40px;
             
-        }
+        } -->
+
+
+        .containerR {
+            max-width: 1200px;
+            max-height: 600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+            grid-template-rows: repeat(auto-fit, minmax(20%, 1fr));
+            
+          }
     </style>
 </head>
 <body>
