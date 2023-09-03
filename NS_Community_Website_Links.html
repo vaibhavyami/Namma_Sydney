@@ -151,7 +151,7 @@
     
                 
         
-            .containerR{
+            <!-- .containerR{
                 display: grid;
                 border: none;
                 width: 100%;
@@ -161,7 +161,21 @@
                 grid-template-columns: repeat(4,1fr);         
                 grid-template-rows: repeat(4,1fr);  
                 gap: 5px; 
+            } -->
+            .containerR{
+            max-width: 1800px;
+            max-height: 1800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+            grid-template-rows: repeat(auto-fit, minmax(15%, 1fr));
+
             }
+
+
+
+
+
         </style>
 </head>
 <body>
@@ -171,7 +185,7 @@
 
 <div class="containerR">
     
-    <!-- <div class="item1"><a href="https://www.facebook.com/profile.php?id=100087907207602&mibextid=9R9pXO" target="_blank">Appu Kannada Radio FB Page</a></div> -->
+    <div class="item1"><a href="https://www.facebook.com/profile.php?id=100087907207602&mibextid=9R9pXO" target="_blank">Appu Kannada Radio FB Page</a></div>
     <div class="item2"><a href="https://friendsofindia.org.au/" target="_blank">FOIA</a></div>
     <div class="item3"><a href="https://www.heacc.org.au/" target="_blank">HEACC</a></div>
     <div class="item4"><a href="https://www.sewaaustralia.org/" target="_blank">SEWA Australia</a></div>
